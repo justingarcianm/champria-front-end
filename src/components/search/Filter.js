@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import FilterBox from "./FilterBox";
 
 export default class Filter extends Component {
@@ -7,7 +7,10 @@ export default class Filter extends Component {
     arr: [],
     games: [],
     region: [],
-    team: []
+    team: [],
+    gameSelect: "",
+    regionSelect: "",
+    teamSelect: ""
   };
 
   changeHandler = e => {
@@ -25,6 +28,17 @@ export default class Filter extends Component {
 
   submitHandler = e => {
     e.preventDefault();
+    this.props.filterBy(
+      this.state.gameSelect,
+      this.state.regionSelect,
+      this.state.teamSelect
+    );
+  };
+
+  onSelectFormChange = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
   };
 
   componentDidMount() {
@@ -52,61 +66,76 @@ export default class Filter extends Component {
 
   render() {
     return (
-      <form className="form-group" onSubmit={this.submitHandler}>
-        <div>
-          <input
-            className="form-control"
-            placeholder="search by player"
-            value={this.state.value}
-            onChange={this.changeHandler}
-          />
-        </div>
-
-        <FilterBox names={this.state.arr} />
-
-        <div className="text-left">
-          <h3>Search By</h3>
+      <Fragment>
+        <form className="form-group">
           <div>
-            <label>Game:</label>
-            <select className="form-control">
-              <option value="all">All</option>
-              {this.state.games.map((game, index) => (
-                <option key={index} value={game}>
-                  {game}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label>Region:</label>
-            <select className="form-control">
-              <option value="all">All</option>
-              {this.state.region.map((region, index) => (
-                <option key={index} value={region}>
-                  {region}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label>Team:</label>
-            <select className="form-control">
-              <option value="all">All</option>
-              {this.state.team.map((team, index) => (
-                <option key={index} value={team}>
-                  {team}
-                </option>
-              ))}
-            </select>
+            <input
+              className="form-control"
+              placeholder="search by player"
+              value={this.state.value}
+              onChange={this.changeHandler}
+            />
           </div>
 
-          <br />
-          <br />
-          <div>
-            <button className="btn button">filter</button>
+          <FilterBox names={this.state.arr} />
+        </form>
+        <form className="form-group" onSubmit={this.submitHandler}>
+          <div className="text-left">
+            <h3>Search By</h3>
+            <div>
+              <label>Game:</label>
+              <select
+                className="form-control"
+                onChange={this.onSelectFormChange}
+                name="gameSelect"
+              >
+                <option value="">All</option>
+                {this.state.games.map((game, index) => (
+                  <option key={index} value={game}>
+                    {game}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label>Region:</label>
+              <select
+                className="form-control"
+                onChange={this.onSelectFormChange}
+                name="regionSelect"
+              >
+                <option value="">All</option>
+                {this.state.region.map((region, index) => (
+                  <option key={index} value={region}>
+                    {region}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label>Team:</label>
+              <select
+                className="form-control"
+                onChange={this.onSelectFormChange}
+                name="teamSelect"
+              >
+                <option value="">All</option>
+                {this.state.team.map((team, index) => (
+                  <option key={index} value={team}>
+                    {team}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <br />
+            <br />
+            <div>
+              <button className="btn button">filter</button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </Fragment>
     );
   }
 }

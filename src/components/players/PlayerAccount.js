@@ -17,7 +17,7 @@ export default class PlayerAccount extends Component {
             <ul>
               <li>Game:</li>
               <li>Region:</li>
-              <li>Team</li>
+              <li>Team:</li>
             </ul>
           </div>
           <div className="col-9">
