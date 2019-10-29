@@ -6,8 +6,8 @@ import SearchDashboard from "./components/search/SearchDashboard";
 import PlayerAccount from "./components/players/PlayerAccount";
 import TeamAccount from "./components/teams/TeamAccount";
 import MainSplash from "./components/splash/MainSplash";
-import Login from "./components/authorization/Login";
-import Register from "./components/authorization/Register";
+import Login from "./services/authorization/Login";
+import Register from "./services/authorization/Register";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
