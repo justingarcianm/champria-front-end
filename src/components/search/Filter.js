@@ -103,7 +103,7 @@ export default class Filter extends Component {
           <br />
           <br />
           <div>
-            <button className="btn btn-primary">filter</button>
+            <button className="btn button">filter</button>
           </div>
         </div>
       </form>
