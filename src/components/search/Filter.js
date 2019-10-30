@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import SelectBox from "./SelectBox"
 import FilterBox from "./FilterBox";
 
 export default class Filter extends Component {

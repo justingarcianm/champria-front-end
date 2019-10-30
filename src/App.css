@@ -2,15 +2,16 @@
   text-align: center;
 }
 
-/* body {
-  background-color: #393939;
-  color: #eee;
+body {
+  margin-top: 5%;
+  /* background-color: #393939;
+  color: #eee; */
 }
 
 .button {
   background-color: #009598;
   color: #eee;
-} */
+}
 
 .drop-shadow {
   /* -webkit-box-shadow: 13px 19px 10px 0px rgba(26, 26, 26, 1);

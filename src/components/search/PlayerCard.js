@@ -4,18 +4,18 @@ import "./styles/PlayerCard.css";
 
 export default function PlayerCard(props) {
   return (
-    <div className="col-2 container">
+    <div className="col-3 container">
       <div key={props.id} className="drop-shadow card text-left">
         <Link to={props.url}>
           <div className="row background">
-            <div className="col-5">
+            <div className="col-sm-5">
               <img
                 src={props.img}
                 alt={"profile image for " + props.name}
                 className="img-fluid"
               />
             </div>
-            <div className="col-7 my-auto">
+            <div className="col-sm-7 my-auto">
               <h5 className="username">{props.name}</h5>
             </div>
           </div>
