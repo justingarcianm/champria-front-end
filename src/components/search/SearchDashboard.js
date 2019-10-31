@@ -30,9 +30,9 @@ export default class SearchDashboard extends Component {
       })
     }
     this.setState({
-      game:game,
-      region:region,
-      team:team
+      game,
+      region,
+      team
     }, () => {
       // after setting state, a callback function can be used to then filter the data according to the state after the state had been assigned
      this.filteredData()
