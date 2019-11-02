@@ -38,7 +38,7 @@ export default class Navbar extends Component {
         </Link>
 
         <ul className="navbar-nav mr-auto">
-          <Link to="/search_player">
+          <Link to="/search_team">
             <li className="nav-link">Browse Teams</li>
           </Link>
           <Link to="/search_player">

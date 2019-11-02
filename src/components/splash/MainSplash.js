@@ -31,7 +31,7 @@ export default class MainSplash extends Component {
           <br />
           <div className="row">
             <div className="col-6">
-              <Link to="/search_player">
+              <Link to="/search_team">
                 <button className="btn  btn-primary">Browse Teams</button>
               </Link>
             </div>
