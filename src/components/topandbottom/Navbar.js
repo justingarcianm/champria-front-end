@@ -22,6 +22,9 @@ export default class Navbar extends Component {
           </li>
         </Link>
         <Link to="/player_account">
+          <li className="nav-link"></li>
+        </Link>
+        <Link to="/player_settings">
           <li className="nav-link">
             <i className="fas fa-ellipsis-v"></i>
           </li>
