@@ -3,13 +3,18 @@
 }
 
 body {
-  margin-top: 5%;
+  margin-top: 6%;
+  font-family: Roboto, sans-serif;
   /* background-color: #393939;
   color: #eee; */
 }
 
+.jumbotron {
+  /* background-color: #1ea2a2; */
+}
+
 .button {
-  background-color: #009598;
+  background-color: #167575;
   color: #eee;
 }
 

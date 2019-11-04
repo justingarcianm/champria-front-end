@@ -24,7 +24,7 @@ export default class MainSplash extends Component {
             </div>
             <div className="col-4 my-auto">
               <Link to="/register">
-                <button className="btn btn-primary">Join now</button>
+                <button className="btn button">Join now</button>
               </Link>
             </div>
           </div>
@@ -32,12 +32,12 @@ export default class MainSplash extends Component {
           <div className="row">
             <div className="col-6">
               <Link to="/search_team">
-                <button className="btn  btn-primary">Browse Teams</button>
+                <button className="btn  button">Browse Teams</button>
               </Link>
             </div>
             <div className="col-6">
               <Link to="search_player">
-                <button className="btn  btn-primary">Browse Players</button>
+                <button className="btn  button">Browse Players</button>
               </Link>
             </div>
           </div>

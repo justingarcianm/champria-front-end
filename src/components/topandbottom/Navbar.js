@@ -30,7 +30,10 @@ export default class Navbar extends Component {
     );
 
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav
+        className="navbar navbar-expand-lg navbar-dark fixed-top"
+        style={{ backgroundColor: "#1ea2a2" }}
+      >
         <Link to="/">
           <h3 className="navbar-brand">
             <i className="fas fa-shield-alt"></i> CHAMPRIA
