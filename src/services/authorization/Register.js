@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom'
 
 export default class Register extends Component {
   state = {
@@ -25,8 +26,10 @@ export default class Register extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={e => this.onSubmit(e)}>
+      <div className="container">
+        <form onSubmit={e => this.onSubmit(e)} className="row">
+          <div className=" m-auto">
+
           <div>
             <input
               placeholder="username"
@@ -34,8 +37,10 @@ export default class Register extends Component {
               value={this.state.username}
               onChange={e => this.changeHandler(e)}
               required
+              className="form-control"
             />
           </div>
+          <br/>
           <div>
             <input
               placeholder="email"
@@ -44,8 +49,10 @@ export default class Register extends Component {
               value={this.state.email}
               onChange={e => this.changeHandler(e)}
               required
+              className="form-control"
             />
           </div>
+          <br/>
           <div>
             <input
               placeholder="password"
@@ -54,8 +61,10 @@ export default class Register extends Component {
               value={this.state.password}
               onChange={e => this.changeHandler(e)}
               required
+              className="form-control"
             />
           </div>
+          <br/>
           <div>
             <input
               placeholder="confirm password"
@@ -64,10 +73,19 @@ export default class Register extends Component {
               value={this.state.confirmPassword}
               onChange={e => this.changeHandler(e)}
               required
+              className="form-control"
             />
           </div>
+          <br/>
           <div>
             <button>create account</button>
+            
+          </div>
+          <div>
+          <Link to="/login">
+              or sign-in
+            </Link>
+          </div>
           </div>
         </form>
       </div>
