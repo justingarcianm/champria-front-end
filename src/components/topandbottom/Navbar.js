@@ -26,7 +26,7 @@ export default class Navbar extends Component {
         </Link>
         <Link to="/player_settings">
           <li className="nav-link">
-            <i className="fas fa-ellipsis-v"></i>
+          <i class="fas fa-cog"></i>
           </li>
         </Link>
       </Fragment>
@@ -42,8 +42,8 @@ export default class Navbar extends Component {
             <i className="fas fa-shield-alt"></i> CHAMPRIA
           </h3>
         </Link>
-
-        <ul className="navbar-nav mr-auto">
+<ul className="navbar-nav mr-auto"></ul>
+        <ul className="navbar-nav">
           <Link to="/search_team">
             <li className="nav-link">Browse Teams</li>
           </Link>
