@@ -11,6 +11,8 @@ import Login from "./services/authorization/Login";
 import Register from "./services/authorization/Register";
 import PlayerSettings from "./components/Settings/PlayerSettings";
 import TeamSettings from "./components/Settings/TeamSettings";
+import TeamChat from './services/chat/teamChat/TeamChat'
+import PlayerChat from './services/chat/playerChat/PlayerChat'
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
@@ -30,6 +32,8 @@ function App() {
           <Route exact path="/team_account" component={TeamAccount} />
           <Route exact path="/team_settings" component={TeamSettings} />
           <Route exact path="/player_settings" component={PlayerSettings} />
+          <Route exact path="/player_chat" component={PlayerChat} />
+          <Route exact path="/team_chat" component={TeamChat} />
         </Switch>
         <Footer />
       </div>

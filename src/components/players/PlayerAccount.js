@@ -19,7 +19,11 @@ export default class PlayerAccount extends Component {
               <li>Region:</li>
               <li>Team:</li>
             </ul>
+            <Link to="/player_settings">
+            <button className="btn btn-primary"><i class="fas fa-cog"></i> Settings</button>
+          </Link>
           </div>
+          
           <div className="col-9">
             <div className="row">
               <div className="col-6">
