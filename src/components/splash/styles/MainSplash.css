@@ -1,4 +1,4 @@
-#background {
+/* #background {
   background-image: url("https://s2vesportsclub.com/wp-content/uploads/2019/01/league-of-legends.jpg");
   background-position: center;
   background-size: cover;
@@ -6,6 +6,16 @@
   height: 80vh;
   z-index: -1;
   filter: blur(1.5px);
+} */
+
+#background {
+  opacity: 0.2;
+  filter: blur(4px);
+  z-index:-1;
+}
+
+video {
+  transform: scaleX(1.4);
 }
 
 #foreground {

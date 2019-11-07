@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Fade from "react-reveal/Fade";
 import "./styles/MainSplash.css";
+import test from './test2.mp4'
 
 import { Link } from "react-router-dom";
 
@@ -62,8 +63,16 @@ export default class MainSplash extends Component {
               </Fade>
             </div>
           </div>
-          <div id="background"></div>
         </Fade>
+        <div id="background">
+          <video
+            src={test}
+            autoPlay
+            loop
+            muted
+            type='video/mp4'
+          ></video>
+        </div>
       </div>
     );
   }
