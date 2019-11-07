@@ -1,4 +1,5 @@
 import React from "react";
+
 // Routes
 import Navbar from "./components/topandbottom/Navbar";
 import Footer from "./components/topandbottom/Footer";
@@ -11,8 +12,8 @@ import Login from "./services/authorization/Login";
 import Register from "./services/authorization/Register";
 import PlayerSettings from "./components/Settings/PlayerSettings";
 import TeamSettings from "./components/Settings/TeamSettings";
-import TeamChat from './services/chat/teamChat/TeamChat'
-import PlayerChat from './services/chat/playerChat/PlayerChat'
+import TeamChat from "./services/chat/teamChat/TeamChat";
+import PlayerChat from "./services/chat/playerChat/PlayerChat";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";

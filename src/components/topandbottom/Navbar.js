@@ -26,7 +26,7 @@ export default class Navbar extends Component {
         </Link>
         <Link to="/player_settings">
           <li className="nav-link">
-          <i class="fas fa-cog"></i>
+            <i class="fas fa-cog"></i>
           </li>
         </Link>
       </Fragment>
@@ -35,14 +35,14 @@ export default class Navbar extends Component {
     return (
       <nav
         className="navbar navbar-expand-lg navbar-dark fixed-top"
-        style={{ backgroundColor: "#1ea2a2" }}
+        style={{ backgroundColor: "#53a09c" }}
       >
         <Link to="/">
           <h3 className="navbar-brand">
             <i className="fas fa-shield-alt"></i> CHAMPRIA
           </h3>
         </Link>
-<ul className="navbar-nav mr-auto"></ul>
+        <ul className="navbar-nav mr-auto"></ul>
         <ul className="navbar-nav">
           <Link to="/search_team">
             <li className="nav-link">Browse Teams</li>

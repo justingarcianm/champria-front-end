@@ -5,16 +5,16 @@
 body {
   margin-top: 6%;
   font-family: Roboto, sans-serif;
-  /* background-color: #393939;
-  color: #eee; */
+  background-color: #393939;
+  color: #eee;
 }
 
 .jumbotron {
-  /* background-color: #1ea2a2; */
+  background-color: #1a1a1a;
 }
 
 .button {
-  background-color: #167575;
+  background-color: #53a09c;
   color: #eee;
 }
 
