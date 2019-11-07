@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./styles/PlayerCard.css";
 
 export default function PlayerCard(props) {
   return (
-    <div className="col-3 container">
-      <div key={props.id} className="drop-shadow card text-left">
+    <div className="col-3 container player-container">
+      <div key={props.id} className="player-card card text-left">
         <Link to={props.url}>
           <div className="row background">
             <div className="col-sm-5">

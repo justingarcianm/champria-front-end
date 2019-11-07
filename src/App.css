@@ -3,14 +3,14 @@
 }
 
 body {
-  margin-top: 6%;
+  padding-top: 3%;
   font-family: Roboto, sans-serif;
   background-color: #393939;
   color: #eee;
 }
 
 .jumbotron {
-  background-color: #1a1a1a;
+  background-color: rgba(57, 57, 57, 0.6);
 }
 
 .button {
@@ -18,8 +18,6 @@ body {
   color: #eee;
 }
 
-.drop-shadow {
-  /* -webkit-box-shadow: 13px 19px 10px 0px rgba(26, 26, 26, 1);
-  -moz-box-shadow: 13px 19px 10px 0px rgba(26, 26, 26, 1);
-  box-shadow: 13px 19px 10px 0px rgba(26, 26, 26, 1); */
+.button:hover {
+  background-color: #3f747a;
 }

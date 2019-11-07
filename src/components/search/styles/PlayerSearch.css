@@ -1,0 +1,75 @@
+/* player styles */
+
+.background {
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  /* border-bottom: 1px solid #eee; */
+}
+
+.username {
+  margin-left: -15px;
+}
+
+.card {
+  /* background: #009598; */
+  padding: 10px;
+  /* border: none; */
+  color: #eee;
+}
+
+a {
+  transition: 500ms ease all;
+
+  /* color: #eee; */
+}
+
+a:hover {
+  /* color: #eee; */
+  text-decoration: none;
+}
+#player-box {
+  height: 65vh;
+  overflow-y: auto;
+  margin-bottom: 4%;
+}
+
+.player-container {
+  padding-bottom: 1.5em;
+}
+
+.player-card {
+  background-color: #53a09c;
+}
+
+.player-card a {
+  color: #eee;
+}
+
+/* Filter styles */
+
+#filteredGames {
+  height: 250px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#filteredGames a {
+  color: #eee;
+}
+
+input.form-control {
+  background: #595959;
+  border: none;
+}
+input.form-control:after {
+  background: #595959;
+  border: none;
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::placeholder {
+  color: #eee;
+  opacity: 1;
+}

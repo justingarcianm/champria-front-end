@@ -1,5 +1,4 @@
 footer {
-  margin-top: 5%;
   background: #1a1a1a;
   color: #eee;
   padding: 25px 15px 0px;
@@ -7,5 +6,9 @@ footer {
 
 footer i {
   color: #53a09c;
-  font-size: 10em;
+  font-size: 5em;
+}
+
+footer a {
+  color: #53a09c;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles/FilterBox.css";
 import { Link } from "react-router-dom";
 
 export default function FilterBox(props) {
@@ -17,7 +16,7 @@ export default function FilterBox(props) {
                     className="img-fluid"
                   />
                 </div>
-                <div className="col-8">
+                <div className="col-8 my-auto">
                   <p>{name.username}</p>
                 </div>
               </div>

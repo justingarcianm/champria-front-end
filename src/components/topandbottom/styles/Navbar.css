@@ -1,0 +1,12 @@
+.nav-text {
+  color: #eee;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #eee;
+}
+
+nav i {
+  font-size: 1em;
+}
