@@ -3,18 +3,19 @@ import { Link } from "react-router-dom";
 
 export default function PlayerCard(props) {
   return (
-    <div className="col-3 container player-container">
+    <div className="col-md-3 col-sm-12 container player-container">
       <div key={props.id} className="player-card card text-left">
         <Link to={`/player/${props.url}/page`}>
-          <div className="row background">
-            <div className="col-sm-5">
+          <div className="background" style={{ backgroundImage: `url(${props.banner})` }}></div>
+          <div 
+          className="row foreground">
+            <div className="col-5">
               <img
                 src={props.img}
                 alt={"profile image for " + props.name}
-                className="img-fluid"
               />
             </div>
-            <div className="col-sm-7 my-auto">
+            <div className="col-7 my-auto">
               <h5 className="username">{props.name}</h5>
             </div>
           </div>

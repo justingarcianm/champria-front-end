@@ -7,7 +7,7 @@ export default function TeamFilterBox(props){
             <div className="row">
         <div className="col-12">
           {props.names.map(name => (
-            <Link to={name.url}>
+            <Link to={`/team/${name.url}/page`}>
               <div className="row">
                 <div className="col-4">
                   <img

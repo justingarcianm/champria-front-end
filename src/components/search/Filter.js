@@ -68,6 +68,7 @@ export default class Filter extends Component {
   render() {
     return (
       <Fragment>
+        <div className="filter-bg d-none d-md-block">
         <form className="form-group">
           <div>
             <input
@@ -136,6 +137,7 @@ export default class Filter extends Component {
             </div>
           </div>
         </form>
+        </div>
       </Fragment>
     );
   }

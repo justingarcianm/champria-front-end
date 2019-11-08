@@ -16,6 +16,7 @@ export default class Players extends Component {
                 region={data.region}
                 team={data.team}
                 url={data.url}
+                banner={data.banner}
               />
             );
           })}

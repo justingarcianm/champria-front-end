@@ -7,18 +7,18 @@ export default class Footer extends Component {
       <footer className="page-footer font-small">
         <div className="container-fluid">
           <div className="row ">
-            <div className="col-4">
+            <div className="col-4 d-none d-md-block">
               <i class="fas fa-shield-alt"></i>
             </div>
-            <div className="col-4 text-left">
+            <div className="col-4 text-left d-none d-md-block">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
                 vel eleifend enim, sit amet posuere libero. Etiam commodo nunc
                 sit amet lacus efficitur gravida. Morbi eget laoreet elit.
               </p>
             </div>
-            <div className="col-2 text-left">
-              <h3>Links</h3>
+            <div className="col-md-2 text-left">
+              <h3>Helpful Links</h3>
               <ul className="list-unstyled">
                 <li>
                   <a href="#">Link</a>
@@ -28,17 +28,17 @@ export default class Footer extends Component {
                 </li>
               </ul>
             </div>
-            <div className="col-2 text-left">
-              <h3>Links</h3>
+            <div className="col-md-2 text-left">
+              <h3>Follow us!</h3>
               <ul className="list-unstyled">
                 <li>
-                  <a href="#">Link</a>
+                  <a href="#">Instagram</a>
                 </li>
                 <li>
-                  <a href="#">Link</a>
+                  <a href="#">FaceBook</a>
                 </li>
                 <li>
-                  <a href="#">Link</a>
+                  <a href="#">Twitter</a>
                 </li>
               </ul>
             </div>

@@ -24,7 +24,7 @@ export default class Navbar extends Component {
         </Link>
         <Link to="/player/:playerId/settings">
           <li className="nav-link">
-            <i class="fas fa-cog"></i> Settings
+            <i className="fas fa-cog"></i> Settings
           </li>
         </Link>
       </Fragment>
