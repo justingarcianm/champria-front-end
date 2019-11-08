@@ -9,7 +9,7 @@ export default class MainSplash extends Component {
   render() {
     return (
       <div>
-        <Fade bottom>
+       
           <div className="container">
             <div className="jumbotron" id="foreground">
               <Fade bottom>
@@ -63,7 +63,6 @@ export default class MainSplash extends Component {
               </Fade>
             </div>
           </div>
-        </Fade>
         <div id="background">
           <video
             src={test}

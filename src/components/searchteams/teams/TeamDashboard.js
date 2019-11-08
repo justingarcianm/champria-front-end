@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Teams from "./Teams";
 import TeamFilter from "../filter/TeamFilter";
+import '../styles/SearchTeams.css'
 
 import TeamData from "../../../TEAM_DATA.json";
 

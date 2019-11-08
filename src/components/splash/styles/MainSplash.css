@@ -14,21 +14,27 @@
   z-index:-1;
 }
 
-video {
-  transform: scaleX(1.4);
-}
 
 #foreground {
   position: absolute;
-  top: 100%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, -40%);
   z-index: 2;
-  height: 55vh;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 #header {
   color: #eee;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+  #header {
+    font-size: 3em;
+  }
+  #foreground p {
+    font-size: 1em;
+  }
 }

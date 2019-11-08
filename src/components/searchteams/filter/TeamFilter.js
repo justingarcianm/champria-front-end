@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import TeamFilterBox from './TeamFilterBox'
 import TeamSelectBox from './TeamSelectBox'
 
@@ -21,7 +21,7 @@ export default class TeamFilter extends Component {
     }
     render() {
         return (
-            <Fragment>
+            <div className="filter-bg">
                 <form className="form-group">
                    <input 
                    className="form-control"
@@ -33,7 +33,7 @@ export default class TeamFilter extends Component {
                 </form>
                 
                 <TeamSelectBox teamFilterData={this.props.teamFilterData} filterBy={this.props.filterBy}/>
-            </Fragment>
+            </div>
         );
     }
 }

@@ -29,6 +29,7 @@
 .foreground img {
   width: 60%;
 }
+
 }
 
 .username {
@@ -89,3 +90,17 @@ a:hover {
   border-radius: 5px;
   margin-bottom: 10%;
 }
+
+.form-control{
+  background-color: #393939;
+  border: none;
+  color: #eee;
+}
+
+.form-control:focus {
+  background-color: #393939;
+  border: none;
+  box-shadow: none;
+  color: white;
+}
+
