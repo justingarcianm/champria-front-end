@@ -27,14 +27,14 @@ function App() {
           <Route exact path="/" component={MainSplash} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
-          <Route exact path="/search_player" component={SearchDashboard} />
-          <Route exact path="/search_team" component={TeamDashboard} />
-          <Route exact path="/player_account" component={PlayerAccount} />
-          <Route exact path="/team_account" component={TeamAccount} />
-          <Route exact path="/team_settings" component={TeamSettings} />
-          <Route exact path="/player_settings" component={PlayerSettings} />
-          <Route exact path="/player_chat" component={PlayerChat} />
-          <Route exact path="/team_chat" component={TeamChat} />
+          <Route exact path="/player/search" component={SearchDashboard} />
+          <Route exact path="/team/search" component={TeamDashboard} />
+          <Route exact path="/player/:playerId/page" component={PlayerAccount} />
+          <Route exact path="/team/:teamId/page" component={TeamAccount} />
+          <Route exact path="/team/:teamId/settings" component={TeamSettings} />
+          <Route exact path="/player/:playerId/settings" component={PlayerSettings} />
+          <Route exact path="/player/:playerId/chat" component={PlayerChat} />
+          <Route exact path="/team/:teamId/chat" component={TeamChat} />
         </Switch>
         <Footer />
       </div>

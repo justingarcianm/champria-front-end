@@ -5,7 +5,7 @@ export default function PlayerCard(props) {
   return (
     <div className="col-3 container">
       <div key={props.id} className="card text-left">
-        <Link to={props.url}>
+        <Link to={`/team/${props.url}/page`}>
           <div
             className="row"
             style={{ backgroundImage: `url(${props.banner})` }}

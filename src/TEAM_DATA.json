@@ -10,7 +10,7 @@
         "game": "CS GO",
         "team": "Terror Dorms",
         "region": "US",
-        "url": "/player_account",
+        "url": ":playerId",
         "role": "captain"
       },
       {
@@ -20,7 +20,7 @@
         "game": "CS GO",
         "team": "Terror Dorms",
         "region": "US",
-        "url": "/player_account",
+        "url": ":playerId",
         "role": "member"
       }
     ],
@@ -31,7 +31,7 @@
     "isLookingForMembers": true,
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/G2_Esports.png",
     "banner": "https://storage.needpix.com/rsynced_images/game-over-2720584_1280.png",
-    "url": "/team_account",
+    "url": ":teamId",
     "files": [
       {
         "url": "some url document",
@@ -56,7 +56,7 @@
         "game": "CS GO",
         "team": "Unicorns are real",
         "region": "US",
-        "url": "/player_account",
+        "url": ":playerId",
         "role": "captain"
       },
       {
@@ -66,7 +66,7 @@
         "game": "CS GO",
         "team": "Unicorns are real",
         "region": "US",
-        "url": "/player_account",
+        "url": ":playerId",
         "role": "member"
       },
       {
@@ -76,7 +76,7 @@
         "game": "CS GO",
         "team": "Unicorns are real",
         "region": "US",
-        "url": "/player_account",
+        "url": ":playerId",
         "role": "member"
       },
       {
@@ -86,7 +86,7 @@
         "game": "CS GO",
         "team": "Unicorns are real",
         "region": "US",
-        "url": "/player_account",
+        "url": ":playerId",
         "role": "member"
       }
     ],
@@ -97,7 +97,7 @@
     "isLookingForMembers": false,
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/G2_Esports.png",
     "banner": "https://storage.needpix.com/rsynced_images/game-over-2720584_1280.png",
-    "url": "/team_account",
+    "url": ":teamId",
     "files": [
       {
         "url": "some url document",

@@ -17,12 +17,12 @@ export default class Navbar extends Component {
 
     let Account = (
       <Fragment>
-        <Link to="/player_account">
+        <Link to="/player/:playerId/page">
           <li className="nav-link">
             <i className="fas fa-user-circle"></i> Account
           </li>
         </Link>
-        <Link to="/player_settings">
+        <Link to="/player/:playerId/settings">
           <li className="nav-link">
             <i class="fas fa-cog"></i> Settings
           </li>
@@ -54,10 +54,10 @@ export default class Navbar extends Component {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ml-auto"></ul>
           <ul className="navbar-nav ">
-            <Link to="/search_team">
+            <Link to="/team/search">
               <li className="nav-link">Browse Teams</li>
             </Link>
-            <Link to="/search_player">
+            <Link to="/player/search">
               <li className="nav-link">Browse Players</li>
             </Link>
             {signedIn ? Account : signedInFalse}

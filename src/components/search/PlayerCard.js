@@ -5,7 +5,7 @@ export default function PlayerCard(props) {
   return (
     <div className="col-3 container player-container">
       <div key={props.id} className="player-card card text-left">
-        <Link to={props.url}>
+        <Link to={`/player/${props.url}/page`}>
           <div className="row background">
             <div className="col-sm-5">
               <img

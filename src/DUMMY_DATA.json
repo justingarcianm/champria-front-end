@@ -6,7 +6,7 @@
     "game": "CS GO",
     "team": "Terror Dorms",
     "region": "US",
-    "url": "/player_account"
+    "url": ":playerId"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "game": "CS GO",
     "team": "",
     "region": "CA",
-    "url": "/player_account"
+    "url": ":playerId"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "game": "",
     "team": "",
     "region": "",
-    "url": "/player_account"
+    "url": ":playerId"
   },
   {
     "id": 4,
@@ -33,6 +33,6 @@
     "game": "Rainbow Six: Siege",
     "team": "Unicorns are real",
     "region": "US",
-    "url": "/player_account"
+    "url": ":playerId"
   }
 ]
