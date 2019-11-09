@@ -50,12 +50,12 @@ export default class MainSplash extends Component {
               <Fade bottom>
                 <div className="row">
                   <div className="col-6">
-                    <Link to="/search_team">
+                    <Link to="/team/search">
                       <button className="btn  button">Browse Teams</button>
                     </Link>
                   </div>
                   <div className="col-6">
-                    <Link to="search_player">
+                    <Link to="/player/search">
                       <button className="btn  button">Browse Players</button>
                     </Link>
                   </div>
@@ -64,13 +64,13 @@ export default class MainSplash extends Component {
             </div>
           </div>
         <div id="background">
-          <video
+          {/* <video
             src={test}
             autoPlay
             loop
             muted
             type='video/mp4'
-          ></video>
+          ></video> */}
         </div>
       </div>
     );

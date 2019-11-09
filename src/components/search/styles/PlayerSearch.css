@@ -91,13 +91,13 @@ a:hover {
   margin-bottom: 10%;
 }
 
-.form-control{
+.filter-bg .form-control{
   background-color: #393939;
   border: none;
   color: #eee;
 }
 
-.form-control:focus {
+.filter-bg .form-control:focus {
   background-color: #393939;
   border: none;
   box-shadow: none;

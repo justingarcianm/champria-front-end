@@ -115,7 +115,7 @@ submitHandler = e => {
               type="password"
               />
             </div> 
-            <button className="btn btn-primary">confirm changes</button>
+            <button className="btn button">confirm changes</button>
         </div>
         
         </div>

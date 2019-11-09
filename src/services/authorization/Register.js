@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom'
+import './styles/TopAndBottom.css'
 
 export default class Register extends Component {
   state = {
@@ -26,9 +27,10 @@ export default class Register extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="container register-container">
+        <h3 className="display-4">Your Journey begins...</h3>
         <form onSubmit={e => this.onSubmit(e)} className="row">
-          <div className=" m-auto">
+          <div className=" m-auto register-form">
 
           <div>
             <input
@@ -78,7 +80,7 @@ export default class Register extends Component {
           </div>
           <br/>
           <div>
-            <button>create account</button>
+            <button className="btn button">create account</button>
             
           </div>
           <div>

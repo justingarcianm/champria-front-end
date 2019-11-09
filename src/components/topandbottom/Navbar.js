@@ -19,12 +19,22 @@ export default class Navbar extends Component {
       <Fragment>
         <Link to="/player/:playerId/page">
           <li className="nav-link">
-            <i className="fas fa-user-circle"></i> Account
+            <i className="fas fa-user-circle"></i> Username
+          </li>
+        </Link>
+        <Link to="/player/:playerId/chat">
+          <li className="nav-link">
+          <i class="fas fa-comment-alt"></i>
           </li>
         </Link>
         <Link to="/player/:playerId/settings">
           <li className="nav-link">
-            <i className="fas fa-cog"></i> Settings
+            <i className="fas fa-cog"></i> 
+          </li>
+        </Link>
+        <Link to="/player/:playerId/settings">
+          <li className="nav-link">
+          <i class="fas fa-ellipsis-v"></i>
           </li>
         </Link>
       </Fragment>
