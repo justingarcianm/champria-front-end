@@ -8,7 +8,7 @@ export default class Footer extends Component {
         <div className="container-fluid">
           <div className="row ">
             <div className="col-4 d-none d-md-block">
-              <i class="fas fa-shield-alt"></i>
+              <i className="fas fa-shield-alt"></i>
             </div>
             <div className="col-4 text-left d-none d-md-block">
               <p>
@@ -44,7 +44,7 @@ export default class Footer extends Component {
             </div>
           </div>
         </div>
-        <div class="footer-copyright text-center">
+        <div className="footer-copyright text-center">
           © 2019 Copyright:
           <a href="https://mdbootstrap.com/education/bootstrap/">
             {" "}

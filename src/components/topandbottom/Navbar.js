@@ -24,17 +24,17 @@ export default class Navbar extends Component {
         </Link>
         <Link to="/player/:playerId/chat">
           <li className="nav-link">
-          <i class="fas fa-comment-alt"></i>
-          </li>
+          <i className="fas fa-comment-alt d-none d-sm-block"></i>
+          </li> <p className="d-block d-sm-none">Chat</p>
         </Link>
         <Link to="/player/:playerId/settings">
           <li className="nav-link">
-            <i className="fas fa-cog"></i> 
-          </li>
+            <i className="fas fa-cog d-none d-sm-block"></i> 
+          </li><p className="d-block d-sm-none">Settings</p>
         </Link>
         <Link to="/player/:playerId/settings">
           <li className="nav-link">
-          <i class="fas fa-ellipsis-v"></i>
+          <i className="fas fa-ellipsis-v d-none d-sm-block"></i>
           </li>
         </Link>
       </Fragment>
@@ -51,7 +51,7 @@ export default class Navbar extends Component {
           </h3>
         </Link>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"
@@ -59,17 +59,18 @@ export default class Navbar extends Component {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto"></ul>
+        <div className="collapse navbar-collapse text-left" id="navbarSupportedContent">
           <ul className="navbar-nav ">
-            <Link to="/team/search">
+          <Link to="/team/search">
               <li className="nav-link">Browse Teams</li>
             </Link>
             <Link to="/player/search">
               <li className="nav-link">Browse Players</li>
             </Link>
+          </ul>
+          <ul className="navbar-nav ml-auto">
             {signedIn ? Account : signedInFalse}
           </ul>
         </div>
