@@ -7,7 +7,8 @@
     "game": "CS GO",
     "team": "Terror Dorms",
     "region": "US",
-    "url": ":playerId"
+    "url": ":playerId",
+    "link": "youtube.com"
   },
   {
     "id": 2,
@@ -17,7 +18,8 @@
     "game": "CS GO",
     "team": "",
     "region": "CA",
-    "url": ":playerId"
+    "url": ":playerId",
+    "link": "youtube.com"
   },
   {
     "id": 3,
